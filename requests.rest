@@ -1,0 +1,19 @@
+
+
+POST http://localhost:5000/user-written-blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NzE0YTc1ZTU1YTIxZmNhM2ZkMDEzNCIsImlhdCI6MTc1MzAyNDg0OX0.2Vv-PoHEY1EVLXzVlMlV4Kl1c2aeksFxg4g9_m5iSdU
+Content-Type: application/json
+
+{
+    "page": 1,
+    "draft": true
+
+}
+
+# POST http://localhost:5000/signin 
+# Content-Type: application/json
+
+# {
+#     "email": "areeshaarif@gmail.com",
+#     "password": "Areesha123"
+# }
