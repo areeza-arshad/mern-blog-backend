@@ -1,5 +1,5 @@
 import express from 'express';
-import { uploadProfileImg } from '../utils/cloudinary.js';
+import { uploadProfileImg } from '../utils/Cloudinary.js';
 
 const router = express.Router();
 

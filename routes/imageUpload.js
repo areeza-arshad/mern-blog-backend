@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
-const cloudinary = require('../utils/cloudinary');
+const cloudinary = require('../utils/Cloudinary');
 
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
