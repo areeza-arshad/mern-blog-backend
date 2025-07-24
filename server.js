@@ -10,8 +10,8 @@ import pkg from 'firebase-admin';
 const admin = pkg;
 import { getAuth } from 'firebase-admin/auth'
 import serviceAccountKey from './react-js-blog-website-59a05-firebase-adminsdk-fbsvc-5a6ad8c693.json' assert { type: 'json' };
-import { uploadProfileImg } from './utils/cloudinary.js'
-import { uploadBanner } from './utils/cloudinary.js';
+import { uploadProfileImg } from './utils/Cloudinary.js';
+import { uploadBanner } from './utils/Cloudinary.js';
 
 // schema below
 import User from './Schema/User.js'
