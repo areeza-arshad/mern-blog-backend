@@ -54,7 +54,7 @@ const verifyJWT = (req, res, next) => {
         return res.status(401).json({error: "No access token"})
     }
 
-    jwt.verify(token, process.env.SECRET_ACCESS_KEY, (err, user) => {
+    jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
         if (err) {
             return res.status(403).json({error: "Access token is invalid"})
         }
@@ -64,7 +64,7 @@ const verifyJWT = (req, res, next) => {
 }
 
 const formateDataToSend = (user) => {
-    const access_token = jwt.sign({id: user._id}, process.env.SECRET_ACCESS_KEY)
+    const access_token = jwt.sign({id: user._id}, process.env.JWT_SECRET)
     return {
         access_token,
         profile_img: user.personal_info.profile_img,
